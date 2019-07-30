@@ -1,0 +1,6 @@
+{
+  "httpStatus": 400,
+  "errors": [
+    "Title required"
+  ]
+}

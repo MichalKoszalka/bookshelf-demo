@@ -1,0 +1,6 @@
+{
+  "httpStatus": 400,
+  "errors": [
+    "Number of pages must be greater than 0"
+  ]
+}

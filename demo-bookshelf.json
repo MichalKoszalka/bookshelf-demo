@@ -1,0 +1,215 @@
+{
+  "front-version": "2.19.2",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007",
+      "lastModified": "2019-07-30T08:37:26.575+02:00",
+      "name": "demo-bookshelf"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"isbn\" : \"9781617290459\",\n  \"numberOfPages\" : \"12\",\n  \"rating\" : \"5\",\n  \"title\": \"Lord of the Rings\",\n  \"author\" : \"J.R.R. Tolkien\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/books"
+      },
+      "id": "906717b1-9457-4b52-8775-9829a084499b",
+      "lastModified": "2019-07-30T08:28:35.579+02:00",
+      "name": "Add book",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/books/1"
+      },
+      "id": "78b34de0-aa3b-469e-a9e2-007224c99563",
+      "lastModified": "2019-07-30T08:37:26.575+02:00",
+      "name": "Delete book with id",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/books"
+      },
+      "id": "354a5916-4f20-4e82-ae99-c4282b58c3c3",
+      "lastModified": "2019-07-30T08:29:39.208+02:00",
+      "name": "Get all books",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/books/1"
+      },
+      "id": "cf05c3aa-4479-40fa-bda6-c101a09f91e1",
+      "lastModified": "2019-07-30T08:28:52.241+02:00",
+      "name": "Get book with id",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"isbn\": \"9781617290459\",\n\"title\": \"X\",\n\"author\": \"A\",\n\"numberOfPages\": 123,\n\"rating\": 4\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/books/1"
+      },
+      "id": "e1af9b3e-19e1-405d-b019-5becb2b6699f",
+      "lastModified": "2019-07-30T08:36:53.928+02:00",
+      "name": "Update book with id",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "8af50e2a-4a4c-4aa6-a020-fc7d3aecd007"
+    }
+  ]
+}

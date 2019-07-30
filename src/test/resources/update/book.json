@@ -1,0 +1,8 @@
+{
+  "id" : 1,
+  "isbn" : "9783161484100",
+  "numberOfPages" : 11,
+  "rating" : 5,
+  "title": "Lord of the Rings",
+  "author" : "J.R.R. Tolkien"
+}

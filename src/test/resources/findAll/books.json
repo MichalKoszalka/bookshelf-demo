@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "isbn": "9781617290459",
+    "title": "A",
+    "author": "X",
+    "numberOfPages": 12,
+    "rating": 3
+  },
+  {
+    "id": 2,
+    "isbn": "9781617290473",
+    "title": "B",
+    "author": "RRR",
+    "numberOfPages": 12,
+    "rating": 3
+  }
+]

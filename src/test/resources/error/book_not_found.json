@@ -1,0 +1,6 @@
+{
+  "status": 404,
+  "error": "Not Found",
+  "message": "Book with id: 1 not found",
+  "path": "/books/1"
+}
