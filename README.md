@@ -13,11 +13,11 @@ Steps:
  - execute `mvn spring-boot:run`
 
 Available endpoints (under localhost:8080/books)
-    - (GET) all books fetching
-    - (POST) new book creation
-    - (GET) /{id} fetching book by id
-    - (PUT) /{id} updating book by id
-    - (DELETE) /{id} deleting book by id
+ - (GET) all books fetching
+ - (POST) new book creation
+ - (GET) /{id} fetching book by id
+ - (PUT) /{id} updating book by id
+ - (DELETE) /{id} deleting book by id
 
 Operations visible in BookController.class
 
